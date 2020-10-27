@@ -122,9 +122,9 @@ class MainWindow(QMainWindow):
         self.Add_Simulation_Screen.exec_()
     def Write_New_Simulation(self):
         if (self.Add_Simulation_Screen.ui.nameLineEdit.text() != '') and \
-        (self.Add_Simulation_Screen.ui.distanceLineEdit.text() != '') and \
+        (self.Add_Simulation_Screen.ui.distLineEdit.text() != '') and \
         (self.Add_Simulation_Screen.ui.speedLineEdit.text() != '') and \
-        (self.Add_Simulation_Screen.ui.directionLineEdit.text() != ''):
+        (self.Add_Simulation_Screen.ui.dirLineEdit.text() != ''):
             Simulation_Name = self.Add_Simulation_Screen.ui.nameLineEdit.text()
             New_Simulation = {
                 self.Add_Simulation_Screen.ui.distanceLabel.text() : self.Add_Simulation_Screen.ui.distLineEdit.text(),
